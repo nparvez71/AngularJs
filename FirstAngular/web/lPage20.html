@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="todoApp">
+    <head>
+        <title>TODO supply a title</title>
+        <link href="bootstrap.css" rel="stylesheet"/>
+        <link href="bootstrap-theme.css" rel="stylesheet"/>
+        <script src="angular.js"></script>
+        <script>
+            var model = {
+                user: "Adam",
+                items: [{action: "Buy Flower", done: false},
+                    {action: "Get Showes", done: false},
+                    {action: "Collect Ticket", done: true},
+                    {action: "Call Joe", done: false}]
+            };
+            var todoApp = angular.module("todoApp", []);
+        </script>
+    </head>
+    <body>
+        <div class="page-header"><h1>To do list</h1></div>
+        
+         <div class="panel">
+            <div class="input-group">
+                <input class="form-control"/>
+                <span class="input-group-btn">
+                    <button class="btn btn-default">ADD</button>
+                </span>
+            </div>
+            <table class="table table-striped">
+
+                <thead>
+                <p>Table for NEEDS</p>
+                <tr>
+                    <th>Description</th>
+                    <th>Done</th>
+                  
+                </tr>
+                </thead>
+
+                <tbody>
+                   
+                </tbody>
+
+            </table>
+        </div>
+    </body>
+</html>
